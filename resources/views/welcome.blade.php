@@ -58,15 +58,20 @@
                         @endif
                     </header>
 
-                    <main class="mt-6">
+                    <main class="mt-6"  style="font-size: 1.6rem;">
                     <div class="flex justify-center mt-6">
-                        <h1 class="text-xl font-semibold">Library</h1>
+                        <h1 class="font-semibold" style="font-size: 3.5rem;">Library</h1>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4 mt-6">
+                        <a href="{{ url('/books') }}" class=" text-white py-2 px-4 rounded">View Books</a>
+                        <a href="{{ url('/cds') }}" class=" text-white py-2 px-4 rounded" >View CDs</a>
+                        <a href="{{ url('/fyps') }}" class=" text-white py-2 px-4 rounded" >View Final Year Projects</a>
+                        <a href="{{ url('/journals') }}" class=" text-white py-2 px-4 rounded" >View Journals</a>
+                        <a href="{{ url('/newspapers') }}" class=" text-white py-2 px-4 rounded" >View Newspapers</a>
                     </div>
                     </main>
 
-                    <footer class="py-16 text-center text-sm text-black dark:text-white/70">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </footer>
+                 
                 </div>
             </div>
         </div>
